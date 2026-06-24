@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — lordfckx</title>
-  <meta name="description" content="Server-side Roblox modules: DataStore, combat, quests, progression, monetization, NPC AI (plus anti-cheat).">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Roblox server-side modules: quests, dash, movement, stamina — plus anti-cheat and R6 animations.">
+  <meta property="og:title" content="Projects — lordfckx">
+  <meta property="og:description" content="Server-side Roblox modules with live demo videos. Quests, dash+VFX, direct movement, sprint+stamina.">
+  <meta property="og:url" content="https://lordfckx.github.io/projects/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -31,13 +35,13 @@
           <div class="tree__row"><span class="tw">▾</span>
             <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> ServerScriptService</div>
           <div class="tree__group">
-            <a class="tree__item" href="index.html">
+            <a class="tree__item" href="/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Home.server.lua</a>
-            <a class="tree__item" href="about.html">
+            <a class="tree__item" href="/about/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> About.server.lua</a>
-            <a class="tree__item is-active" href="projects.html">
+            <a class="tree__item is-active" href="/projects/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Projects.server.lua</a>
-            <a class="tree__item" href="contact.html">
+            <a class="tree__item" href="/contact/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contact.server.lua</a>
           </div>
         </div>
@@ -61,7 +65,7 @@
           <h1 class="title">Stuff I've built.</h1>
           <p style="color:var(--ink-dim);margin-top:14px;max-width:62ch">All server-side, no UI fluff. Each one's a real module that runs in Studio — demos drop as I record 'em.</p>
 
-           <ol class="modules" style="margin-top:34px">
+          <ol class="modules" style="margin-top:34px">
 
             <li class="mod reveal" data-delay="60">
               <div class="mod__head">
@@ -75,7 +79,7 @@
               <div class="mod__side">
                 <span class="pill">ready</span>
                 <div class="mod__tags"><span>config-driven</span></div>
-                 <a class="btn btn--ghost btn--sm" href="https://youtu.be/t2Tkvl0ql2k" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> demo</a>
+                <a class="btn btn--ghost btn--sm" href="https://youtu.be/t2Tkvl0ql2k" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> demo</a>
               </div>
             </li>
 
@@ -101,7 +105,7 @@
                 <div>
                   <div class="mod__name">Direct Movement System</div>
                   <div class="mod__sig"><span class="ret">return</span> DirectMovement</div>
-                   <p class="mod__desc">Character leans and tilts toward camera direction — smooth body alignment based on where you're looking. No snapping, just fluid motion.</p>
+                  <p class="mod__desc">Character leans and tilts toward camera direction — smooth body alignment based on where you're looking. No snapping, just fluid motion.</p>
                 </div>
               </div>
               <div class="mod__side">
@@ -140,6 +144,6 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>

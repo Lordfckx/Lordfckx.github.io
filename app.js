@@ -1,6 +1,7 @@
 (function () {
   'use strict';
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   var explorer = document.getElementById('explorer');
   var scrim = document.getElementById('scrim');
   var menu = document.querySelector('.titlebar__menu');
@@ -21,6 +22,11 @@
 
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
+
+  document.querySelectorAll('[data-years-from]').forEach(function (el) {
+    var start = parseInt(el.getAttribute('data-years-from'), 10);
+    if (start) el.textContent = new Date().getFullYear() - start;
+  });
 
   document.querySelectorAll('[data-copy]').forEach(function (el) {
     el.addEventListener('click', function () {

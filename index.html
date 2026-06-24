@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lordfckx — Roblox backend dev</title>
   <meta name="description" content="Roblox Luau backend dev. The server-side stuff players never see but always feel — saves, combat, anti-cheat.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="lordfckx — Roblox backend dev">
+  <meta property="og:description" content="Server-side Luau systems. Saves, combat, quests, anti-cheat — the stuff that runs when 500 players pile in at once.">
+  <meta property="og:url" content="https://lordfckx.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -32,13 +36,13 @@
           <div class="tree__row"><span class="tw">▾</span>
             <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> ServerScriptService</div>
           <div class="tree__group">
-            <a class="tree__item is-active" href="index.html">
+            <a class="tree__item is-active" href="/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Home.server.lua</a>
-            <a class="tree__item" href="about.html">
+            <a class="tree__item" href="/about/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> About.server.lua</a>
-            <a class="tree__item" href="projects.html">
+            <a class="tree__item" href="/projects/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Projects.server.lua</a>
-            <a class="tree__item" href="contact.html">
+            <a class="tree__item" href="/contact/">
               <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contact.server.lua</a>
           </div>
         </div>
@@ -77,10 +81,10 @@
 
           <div class="statement reveal">
             <h1 class="title">The server is my <em>front end</em>.</h1>
-            <p>I'm the backend guy. Roblox, Luau, 4 years in. I build the stuff players never see but 100% feel — saves that don't eat your data, combat that doesn't desync, anti-cheat that actually catches people. If it runs on the server, it's my thing.</p>
-            <p class="spec"><b>4 years in</b><span class="d">/</span><b>server-side only</b></p>
+            <p>I'm the backend guy. Roblox, Luau, <span data-years-from="2022">4</span> years in. I build the stuff players never see but 100% feel — saves that don't eat your data, combat that doesn't desync, anti-cheat that actually catches people. If it runs on the server, it's my thing.</p>
+            <p class="spec"><b><span data-years-from="2022">4</span> years in</b><span class="d">/</span><b>server-side only</b></p>
             <div class="cta">
-              <a class="btn btn--primary" href="projects.html">
+              <a class="btn btn--primary" href="/projects/">
                 <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                 See what I've built
               </a>
@@ -115,6 +119,6 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>
