@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — lordfckx</title>
+  <meta name="description" content="Server-side Roblox modules: DataStore, combat, quests, progression, monetization, NPC AI (plus anti-cheat).">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="titlebar">
+    <button class="titlebar__menu" aria-label="Toggle Explorer">
+      <svg class="ic" viewBox="0 0 24 24" style="width:1.1rem;height:1.1rem"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Explorer
+    </button>
+    <div class="titlebar__file"><b>lordfckx</b>.rbxl</div>
+  </header>
+
+  <div class="shell">
+    <aside class="explorer" id="explorer">
+      <div class="explorer__head">Explorer</div>
+      <nav class="tree">
+        <div class="tree__row tree__row--root"><span class="tw">▾</span>
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg> game</div>
+        <div class="tree__group">
+          <div class="tree__row"><span class="tw">▾</span>
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> ServerScriptService</div>
+          <div class="tree__group">
+            <a class="tree__item" href="index.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Home.server.lua</a>
+            <a class="tree__item" href="about.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> About.server.lua</a>
+            <a class="tree__item is-active" href="projects.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Projects.server.lua</a>
+            <a class="tree__item" href="contact.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contact.server.lua</a>
+          </div>
+        </div>
+      </nav>
+      <div class="explorer__foot">
+        <div class="who">@holorson</div>
+        <a class="msg" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" style="width:1rem;height:1rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Message on Discord
+        </a>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="stage">
+      <div class="pathtab"><b>ServerScriptService</b> <span class="sep">›</span> <span class="cur">Projects.server.lua</span></div>
+
+      <div class="stage__inner">
+        <section class="block">
+          <p class="kicker">ServerScriptService:GetChildren()</p>
+          <h1 class="title">Stuff I've built.</h1>
+          <p style="color:var(--ink-dim);margin-top:14px;max-width:62ch">All server-side, no UI fluff. Each one's a real module that runs in Studio — demos drop as I record 'em.</p>
+
+           <ol class="modules" style="margin-top:34px">
+
+            <li class="mod reveal" data-delay="60">
+              <div class="mod__head">
+                <span class="mod__icon"><svg class="ic" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+                <div>
+                  <div class="mod__name">Quest / Objective Tracker</div>
+                  <div class="mod__sig"><span class="ret">return</span> QuestService</div>
+                  <p class="mod__desc">Assign quests, track progress, grant rewards and persist state across sessions. Data-driven from a config table.</p>
+                </div>
+              </div>
+              <div class="mod__side">
+                <span class="pill">ready</span>
+                <div class="mod__tags"><span>config-driven</span></div>
+                 <a class="btn btn--ghost btn--sm" href="https://youtu.be/t2Tkvl0ql2k" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> demo</a>
+              </div>
+            </li>
+
+            <li class="mod reveal" data-delay="100">
+              <div class="mod__head">
+                <span class="mod__icon"><svg class="ic" viewBox="0 0 24 24"><path d="M18 7l-5 5-4-4-6 6"/><circle cx="19" cy="5" r="3"/></svg></span>
+                <div>
+                  <div class="mod__name">Dash + VFX</div>
+                  <div class="mod__sig"><span class="ret">return</span> Dash</div>
+                  <p class="mod__desc">Directional dash with cooldown, trail particles and impact VFX. Feels snappy, looks clean — no input lag.</p>
+                </div>
+              </div>
+              <div class="mod__side">
+                <span class="pill">ready</span>
+                <div class="mod__tags"><span>client-authoritative</span></div>
+                <a class="btn btn--ghost btn--sm" href="https://youtu.be/hzNSD5kv-Ps" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> demo</a>
+              </div>
+            </li>
+
+            <li class="mod reveal" data-delay="60">
+              <div class="mod__head">
+                <span class="mod__icon"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <div>
+                  <div class="mod__name">Direct Movement System</div>
+                  <div class="mod__sig"><span class="ret">return</span> DirectMovement</div>
+                   <p class="mod__desc">Character leans and tilts toward camera direction — smooth body alignment based on where you're looking. No snapping, just fluid motion.</p>
+                </div>
+              </div>
+              <div class="mod__side">
+                <span class="pill">ready</span>
+                <div class="mod__tags"><span>physics-based</span></div>
+                <a class="btn btn--ghost btn--sm" href="https://youtu.be/YhdZ5WLpW8U" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> demo</a>
+              </div>
+            </li>
+
+            <li class="mod reveal" data-delay="100">
+              <div class="mod__head">
+                <span class="mod__icon"><svg class="ic" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                <div>
+                  <div class="mod__name">Sprint + Stamina System</div>
+                  <div class="mod__sig"><span class="ret">return</span> Stamina</div>
+                  <p class="mod__desc">Sprint toggle with stamina drain/regen, exhaustion state and UI binding. Configurable rates, smooth feel.</p>
+                </div>
+              </div>
+              <div class="mod__side">
+                <span class="pill">ready</span>
+                <div class="mod__tags"><span>cooldown-managed</span></div>
+                <a class="btn btn--ghost btn--sm" href="https://youtu.be/yt4Ct26gsO8" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> demo</a>
+              </div>
+            </li>
+
+          </ol>
+
+          <p style="color:var(--ink-faint);font-family:var(--mono);font-size:0.82rem;margin-top:20px">— also do anti-cheat (speed / fly / teleport detection, auto-kick) and R6 basic animations if your game needs it.</p>
+        </section>
+      </div>
+
+      <footer class="foot">
+        <span>lordfckx · @holorson · Roblox backend dev</span>
+        <span><a href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">discord</a> · © <span data-year>2026</span></span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

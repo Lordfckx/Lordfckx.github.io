@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lordfckx — Roblox backend dev</title>
+  <meta name="description" content="Roblox Luau backend dev. The server-side stuff players never see but always feel — saves, combat, anti-cheat.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="titlebar">
+    <button class="titlebar__menu" aria-label="Toggle Explorer">
+      <svg class="ic" viewBox="0 0 24 24" style="width:1.1rem;height:1.1rem"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Explorer
+    </button>
+    <div class="titlebar__file"><b>lordfckx</b>.rbxl</div>
+  </header>
+
+  <div class="shell">
+
+    <aside class="explorer" id="explorer">
+      <div class="explorer__head">Explorer</div>
+      <nav class="tree">
+        <div class="tree__row tree__row--root"><span class="tw">▾</span>
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg> game</div>
+        <div class="tree__group">
+          <div class="tree__row"><span class="tw">▾</span>
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> ServerScriptService</div>
+          <div class="tree__group">
+            <a class="tree__item is-active" href="index.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Home.server.lua</a>
+            <a class="tree__item" href="about.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> About.server.lua</a>
+            <a class="tree__item" href="projects.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Projects.server.lua</a>
+            <a class="tree__item" href="contact.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contact.server.lua</a>
+          </div>
+        </div>
+      </nav>
+      <div class="explorer__foot">
+        <div class="who">@holorson</div>
+        <a class="msg" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" style="width:1rem;height:1rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Message on Discord
+        </a>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="stage">
+      <div class="pathtab"><b>ServerScriptService</b> <span class="sep">›</span> <span class="cur">Home.server.lua</span></div>
+
+      <div class="stage__inner">
+        <section class="block">
+          <p class="kicker">output.log</p>
+
+          <div class="console">
+            <div class="console__bar">
+              <span class="name">Output</span>
+            </div>
+            <div class="console__body" id="log">
+              <div class="log"><span class="t">00:00.012</span><span class="lv lv-info">info</span><span class="src">Bootstrap</span><span class="msg">booting lordfckx runtime…</span></div>
+              <div class="log"><span class="t">00:00.088</span><span class="lv lv-info">info</span><span class="src">DataStore</span><span class="msg">profile <b>@holorson</b> loaded · session locked</span></div>
+              <div class="log"><span class="t">00:00.131</span><span class="lv lv-info">info</span><span class="src">Combat</span><span class="msg">hit registration: server-side, no trust</span></div>
+              <div class="log log--warn"><span class="t">00:00.204</span><span class="lv lv-warn">warn</span><span class="src">AntiCheat</span><span class="msg">player#42 going 3.2× too fast → booted</span></div>
+              <div class="log"><span class="t">00:00.310</span><span class="lv lv-info">info</span><span class="src">Economy</span><span class="msg">DevProduct receipt handled · no double-grant</span></div>
+              <div class="log log--ok"><span class="t">00:00.355</span><span class="lv lv-ok">ok</span><span class="src">Runtime</span><span class="msg">everything's up · 0 data lost</span></div>
+            </div>
+            <div class="console__cmd"><span class="pr">&gt;</span> <span class="caret"></span></div>
+          </div>
+
+          <div class="statement reveal">
+            <h1 class="title">The server is my <em>front end</em>.</h1>
+            <p>I'm the backend guy. Roblox, Luau, 4 years in. I build the stuff players never see but 100% feel — saves that don't eat your data, combat that doesn't desync, anti-cheat that actually catches people. If it runs on the server, it's my thing.</p>
+            <p class="spec"><b>4 years in</b><span class="d">/</span><b>server-side only</b></p>
+            <div class="cta">
+              <a class="btn btn--primary" href="projects.html">
+                <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                See what I've built
+              </a>
+              <a class="btn btn--ghost" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+                <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Hit me up
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="stack reveal">
+          <p class="kicker">require("stack")</p>
+          <div class="stack__grid">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Luau</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> DataStore</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg> RemoteEvents</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/></svg> OOP</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> Client/Server</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Combat</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Quests</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Monetization</span>
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Anti-Cheat</span>
+          </div>
+        </section>
+      </div>
+
+      <footer class="foot">
+        <span>lordfckx · @holorson · Roblox backend dev</span>
+        <span><a href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">discord</a> · © <span data-year>2026</span></span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

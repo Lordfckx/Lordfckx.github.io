@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — lordfckx</title>
+  <meta name="description" content="Taking Roblox backend projects. Reach out on Discord.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="titlebar">
+    <button class="titlebar__menu" aria-label="Toggle Explorer">
+      <svg class="ic" viewBox="0 0 24 24" style="width:1.1rem;height:1.1rem"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Explorer
+    </button>
+    <div class="titlebar__file"><b>lordfckx</b>.rbxl</div>
+  </header>
+
+  <div class="shell">
+    <aside class="explorer" id="explorer">
+      <div class="explorer__head">Explorer</div>
+      <nav class="tree">
+        <div class="tree__row tree__row--root"><span class="tw">▾</span>
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg> game</div>
+        <div class="tree__group">
+          <div class="tree__row"><span class="tw">▾</span>
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> ServerScriptService</div>
+          <div class="tree__group">
+            <a class="tree__item" href="index.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Home.server.lua</a>
+            <a class="tree__item" href="about.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> About.server.lua</a>
+            <a class="tree__item" href="projects.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Projects.server.lua</a>
+            <a class="tree__item is-active" href="contact.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contact.server.lua</a>
+          </div>
+        </div>
+      </nav>
+      <div class="explorer__foot">
+        <div class="who">@holorson</div>
+        <a class="msg" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" style="width:1rem;height:1rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Message on Discord
+        </a>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="stage">
+      <div class="pathtab"><b>ServerScriptService</b> <span class="sep">›</span> <span class="cur">Contact.server.lua</span></div>
+
+      <div class="stage__inner">
+        <section class="block contact">
+          <p class="kicker">Players.lordfckx:Hire()</p>
+          <h1 class="title">Need a backend?<br>Say less.</h1>
+          <p style="color:var(--ink-dim);margin-top:14px;max-width:50ch">I do Roblox server-side work — systems, data, anti-cheat, the money stuff. Discord's the move. Just run the command.</p>
+
+          <div class="cmdbar reveal">
+            <div class="cmdbar__label">Command Bar</div>
+            <div class="cmdbar__line">
+              <span class="pr">&gt;</span>
+              <span class="code" data-type='game.Players.lordfckx:Message()'>game.Players.lordfckx:<span class="f">Message</span>(<span class="s">"hey"</span>)</span>
+              <a class="btn btn--primary btn--sm run" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+                <svg class="ic" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg> Run
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__row reveal" data-delay="120">
+            <a class="btn btn--ghost" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Open Discord
+            </a>
+            <button class="idcopy" data-copy="holorson" title="Click to copy">
+              <svg class="ic" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              @holorson <span class="lbl">· copy</span>
+            </button>
+          </div>
+
+          <p class="contact__note">usually hit you back within 24h · Roblox @holorson</p>
+        </section>
+      </div>
+
+      <footer class="foot">
+        <span>lordfckx · @holorson · Roblox backend dev</span>
+        <span><a href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">discord</a> · © <span data-year>2026</span></span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

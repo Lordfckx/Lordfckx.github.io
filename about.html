@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — lordfckx</title>
+  <meta name="description" content="lordfckx (@holorson) — 4 years of Luau. Full-cycle server-side scripting for Roblox.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="titlebar">
+    <button class="titlebar__menu" aria-label="Toggle Explorer">
+      <svg class="ic" viewBox="0 0 24 24" style="width:1.1rem;height:1.1rem"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Explorer
+    </button>
+    <div class="titlebar__file"><b>lordfckx</b>.rbxl</div>
+  </header>
+
+  <div class="shell">
+    <aside class="explorer" id="explorer">
+      <div class="explorer__head">Explorer</div>
+      <nav class="tree">
+        <div class="tree__row tree__row--root"><span class="tw">▾</span>
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg> game</div>
+        <div class="tree__group">
+          <div class="tree__row"><span class="tw">▾</span>
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> ServerScriptService</div>
+          <div class="tree__group">
+            <a class="tree__item" href="index.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Home.server.lua</a>
+            <a class="tree__item is-active" href="about.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> About.server.lua</a>
+            <a class="tree__item" href="projects.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Projects.server.lua</a>
+            <a class="tree__item" href="contact.html">
+              <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Contact.server.lua</a>
+          </div>
+        </div>
+      </nav>
+      <div class="explorer__foot">
+        <div class="who">@holorson</div>
+        <a class="msg" href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" style="width:1rem;height:1rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Message on Discord
+        </a>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="stage">
+      <div class="pathtab"><b>ServerScriptService</b> <span class="sep">›</span> <span class="cur">About.server.lua</span></div>
+
+      <div class="stage__inner">
+        <section class="block">
+          <p class="kicker">whoami</p>
+          <h1 class="title">So, who's lordfckx?</h1>
+
+          <div class="about2">
+            <div class="bio reveal">
+              <p class="lead">Short version: I'm the guy you call when the backend has to just work.</p>
+              <p>I'm <b>lordfckx</b> — <b>@holorson</b> on Roblox. Been writing Luau for <b>4 years</b> now, and somewhere along the way I stopped caring about flashy UI and got hooked on the part nobody sees: the server.</p>
+              <p>My whole thing is <b>backend</b> — game logic, saving data, combat, anti-cheat, the money stuff. Basically the code that gets hammered at 2am when a game pops off and 500 people pile in at once. I write it so it doesn't fold.</p>
+              <p>Done <b>solo stuff</b>, worked in <b>teams</b>, took on <b>client work</b> — so I'm chill either way: building a codebase from zero or jumping into someone else's without wrecking it.</p>
+            </div>
+
+            <aside class="facts reveal" data-delay="120">
+              <p class="facts__t">quick facts</p>
+              <dl>
+                <dt>handle</dt><dd>@holorson</dd>
+                <dt>doing this</dt><dd><span>4 years</span></dd>
+                <dt>focus</dt><dd>backend / server-side</dd>
+                <dt>worked</dt><dd>solo · teams · clients</dd>
+                <dt>lang</dt><dd>Luau, top to bottom</dd>
+                <dt>rule #1</dt><dd>never trust the client</dd>
+              </dl>
+            </aside>
+          </div>
+
+          <div class="skills2 reveal" data-delay="80">
+            <div class="skillcol">
+              <h4>core</h4>
+              <div class="row">
+                <span class="sk">Luau</span><span class="sk">OOP</span><span class="sk">modular design</span><span class="sk">client/server split</span>
+              </div>
+            </div>
+            <div class="skillcol">
+              <h4>systems</h4>
+              <div class="row">
+                <span class="sk">DataStore</span><span class="sk">RemoteEvents</span><span class="sk">session locking</span>
+              </div>
+            </div>
+            <div class="skillcol">
+              <h4>gameplay</h4>
+              <div class="row">
+                <span class="sk">combat</span><span class="sk">quests</span><span class="sk">XP / ranks</span><span class="sk">monetization</span><span class="sk">anti-cheat</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="foot">
+        <span>lordfckx · @holorson · Roblox backend dev</span>
+        <span><a href="https://discord.com/users/856118993508106252" target="_blank" rel="noopener">discord</a> · © <span data-year>2026</span></span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
